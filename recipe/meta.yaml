@@ -26,10 +26,11 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/share/jupyter/labextensions/jupyterlab-fileopen/package.json                      # [unix]
-    - test -f ${PREFIX}/etc/jupyter/jupyter_server_config.d/jupyterlab-fileopen.json                      # [unix]
-    - if not exist %PREFIX%\\share\\jupyter\\labextensions\\jupyterlab-fileopen\\package.json (exit 1)    # [win]
-    - if not exist %PREFIX%\\etc\\jupyter\\jupyter_server_config.d\\jupyterlab-fileopen.json (exit 1)     # [win]
+    - test -f ${PREFIX}/share/jupyter/labextensions/jupyterlab-fileopen/package.json                                                   # [unix]
+    - test -f ${PREFIX}/share/jupyter/labextensions/jupyterlab-fileopen/schemas/jupyterlab-fileopen/jupyterlab-fileopen-settings.json  # [unix]
+    - test -f ${PREFIX}/etc/jupyter/jupyter_server_config.d/jupyterlab-fileopen.json                                                   # [unix]
+    - if not exist %PREFIX%\\share\\jupyter\\labextensions\\jupyterlab-fileopen\\package.json (exit 1)                                 # [win]
+    - if not exist %PREFIX%\\etc\\jupyter\\jupyter_server_config.d\\jupyterlab-fileopen.json (exit 1)                                  # [win]
 
 about:
   home: https://github.com/martinRenou/jupyterlab-fileopen
