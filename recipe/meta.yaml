@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-fileopen" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0cb7efeb37a341aeb137c7d03505b7d86680dd98dd61f2f30233ed697099c88b
+  sha256: d1aed81bc7e49c9a7171b75bf7dde946ccd067a7c7f6d7285870c61bee665e54
 
 build:
   noarch: python
