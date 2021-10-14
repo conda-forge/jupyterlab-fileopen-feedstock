@@ -1,7 +1,7 @@
 About jupyterlab-fileopen
 =========================
 
-Home: https://github.com/martinRenou/jupyterlab-fileopen
+Home: https://github.com/jupyterlab-contrib/jupyterlab-fileopen
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-file
 
 Summary: A JupyterLab extension that adds a shortcut for opening files using the OS file explorer
 
-Development: https://github.com/martinRenou/jupyterlab-fileopen
+Development: https://github.com/jupyterlab-contrib/jupyterlab-fileopen
 
 A JupyterLab extension that adds a shortcut for opening files using the OS file explorer
 
@@ -120,5 +120,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jupyterlab-contrib-bot](https://github.com/jupyterlab-contrib-bot/)
 * [@martinRenou](https://github.com/martinRenou/)
 
