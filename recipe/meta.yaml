@@ -33,15 +33,16 @@ test:
     - if not exist %PREFIX%\\etc\\jupyter\\jupyter_server_config.d\\jupyterlab-fileopen.json (exit 1)                                  # [win]
 
 about:
-  home: https://github.com/martinRenou/jupyterlab-fileopen
+  home: https://github.com/jupyterlab-contrib/jupyterlab-fileopen
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: 'A JupyterLab extension that adds a shortcut for opening files using the OS file explorer'
   description: |
     A JupyterLab extension that adds a shortcut for opening files using the OS file explorer
-  dev_url: https://github.com/martinRenou/jupyterlab-fileopen
+  dev_url: https://github.com/jupyterlab-contrib/jupyterlab-fileopen
 
 extra:
   recipe-maintainers:
     - martinRenou
+    - jupyterlab-contrib-bot
