@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 15a71acf852860551fdaef9fcc4baa504070ea98788e9a744c6cc48ecc22440d
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.6,<4.0
+    - python {{ python_min }}
     - pip
     - jupyterlab =3
     - jupyter-packaging =0.10
   run:
-    - python >=3.6,<4.0
+    - python >={{ python_min }},<4.0
     - jupyterlab =3
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - test -f ${PREFIX}/share/jupyter/labextensions/jupyterlab-fileopen/package.json                                                   # [unix]
     - test -f ${PREFIX}/share/jupyter/labextensions/jupyterlab-fileopen/schemas/jupyterlab-fileopen/jupyterlab-fileopen-settings.json  # [unix]
